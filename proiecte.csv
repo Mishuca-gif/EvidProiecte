@@ -1,0 +1,51 @@
+id,titlu,descriere,dataStart,dataEnd,status
+1,Sistem ERP,Dezvoltare sistem ERP complet,2023-01-01,2023-12-31,FINALIZAT
+2,Aplicatie Mobile,App iOS si Android,2023-03-01,2024-03-01,ACTIV
+3,Portal Web,Portal pentru clienti,2023-02-01,2023-08-01,FINALIZAT
+4,Sistem CRM,Gestiune relatii clienti,2023-06-01,2024-06-01,ACTIV
+5,Platforma E-learning,Cursuri online,2023-04-01,2024-04-01,ACTIV
+6,Magazin Online,E-commerce complet,2023-05-01,2023-11-01,FINALIZAT
+7,Sistem HR,Gestiune personal,2023-07-01,2024-07-01,ACTIV
+8,API Gateway,Centralizare API-uri,2023-08-01,2024-02-01,ACTIV
+9,Dashboard Analytics,Rapoarte si statistici,2023-09-01,2024-03-01,ACTIV
+10,Sistem Facturare,Facturi automate,2023-10-01,2024-04-01,ACTIV
+11,Aplicatie Desktop,Tool intern companie,2023-01-15,2023-06-15,FINALIZAT
+12,Securitate IT,Audit si implementare,2023-02-15,2023-09-15,FINALIZAT
+13,Migrare Cloud,AWS migration,2023-03-15,2024-03-15,ACTIV
+14,Sistem Notificari,Push si email alerts,2023-04-15,2023-10-15,FINALIZAT
+15,Chatbot Support,AI customer support,2023-05-15,2024-05-15,ACTIV
+16,Sistem Inventar,Gestiune stocuri,2023-06-15,2024-06-15,ACTIV
+17,Aplicatie Raportare,Rapoarte PDF,2023-07-15,2024-01-15,FINALIZAT
+18,Platform IoT,Conectare dispozitive,2023-08-15,2024-08-15,ACTIV
+19,Sistem Rezervari,Booking online,2023-09-15,2024-09-15,ACTIV
+20,Aplicatie Contab.,Gestiune financiara,2023-10-15,2024-10-15,ACTIV
+21,Sistem Monitorizare,Server monitoring,2023-11-01,2024-05-01,ACTIV
+22,Portal Angajati,Intranet companie,2023-11-15,2024-05-15,ACTIV
+23,Sistem Ticketing,Suport tehnic,2023-12-01,2024-06-01,ACTIV
+24,Aplicatie Logistica,Transport si livrari,2024-01-01,2024-12-31,ACTIV
+25,Sistem Autentificare,SSO si OAuth,2024-01-15,2024-07-15,ACTIV
+26,Platforma Recrutare,HR si interviuri,2024-02-01,2024-08-01,ACTIV
+27,Sistem Documente,Gestiune documente,2024-02-15,2024-08-15,ACTIV
+28,Aplicatie Sondaje,Chestionare online,2024-03-01,2024-09-01,ACTIV
+29,Sistem Planificare,Orare si scheduling,2024-03-15,2024-09-15,ACTIV
+30,Platforma Video,Streaming intern,2024-04-01,2024-10-01,ACTIV
+31,Sistem Backup,Backup automat date,2024-04-15,2024-10-15,ACTIV
+32,Aplicatie Clienti,CRM simplificat,2024-05-01,2024-11-01,ACTIV
+33,Sistem Contracte,Gestiune contracte,2024-05-15,2024-11-15,ACTIV
+34,Portal Furnizori,Relatii furnizori,2024-06-01,2024-12-01,ACTIV
+35,Sistem Calitate,QA si testing,2024-06-15,2024-12-15,ACTIV
+36,Aplicatie Training,Instruire angajati,2024-07-01,null,ACTIV
+37,Sistem Evaluare,Performanta angajati,2024-07-15,null,ACTIV
+38,Platforma Colaborare,Tool echipe,2024-08-01,null,ACTIV
+39,Sistem Audit,Verificare procese,2024-08-15,null,ACTIV
+40,Aplicatie Buget,Planificare buget,2024-09-01,null,ACTIV
+41,Sistem Arhiva,Arhivare digitala,2024-09-15,null,ACTIV
+42,Portal Clienti B2B,Zona clienti business,2024-10-01,null,ACTIV
+43,Sistem Comenzi,Procesare comenzi,2024-10-15,null,ACTIV
+44,Aplicatie Livrari,Tracking livrari,2024-11-01,null,ACTIV
+45,Sistem Plati,Procesare plati online,2024-11-15,null,ACTIV
+46,Platforma Marketing,Campanii marketing,2024-12-01,null,ACTIV
+47,Sistem Feedback,Colectare feedback,2024-12-15,null,ACTIV
+48,Aplicatie KPI,Indicatori performanta,2025-01-01,null,ACTIV
+49,Sistem Workflow,Automatizare procese,2025-01-15,null,ACTIV
+50,Platforma Integrata,Integrare sisteme,2025-02-01,null,ACTIV

@@ -1,0 +1,52 @@
+=== Lista Sarcini ===
+
+ID: 1 | Titlu: Analiza cerinte | Status: FINALIZATA | Prioritate: 1 | Proiect: Sistem ERP | Executant: Ion Popescu
+ID: 2 | Titlu: Design baza de date | Status: FINALIZATA | Prioritate: 1 | Proiect: Sistem ERP | Executant: Maria Ionescu
+ID: 3 | Titlu: Implementare API | Status: IN_PROGRES | Prioritate: 2 | Proiect: Aplicatie Mobile | Executant: Andrei Georgescu
+ID: 4 | Titlu: Testare unitara | Status: NOUA | Prioritate: 2 | Proiect: Aplicatie Mobile | Executant: Elena Mihai
+ID: 5 | Titlu: Design UI | Status: FINALIZATA | Prioritate: 1 | Proiect: Portal Web | Executant: Vasile Constantin
+ID: 6 | Titlu: Implementare login | Status: FINALIZATA | Prioritate: 1 | Proiect: Portal Web | Executant: Cristina Stan
+ID: 7 | Titlu: Integrare CRM | Status: IN_PROGRES | Prioritate: 2 | Proiect: Sistem CRM | Executant: Alexandru Dumitrescu
+ID: 8 | Titlu: Testare integrare | Status: NOUA | Prioritate: 3 | Proiect: Sistem CRM | Executant: Ioana Popa
+ID: 9 | Titlu: Creare cursuri | Status: IN_PROGRES | Prioritate: 1 | Proiect: Platforma E-learning | Executant: Mihai Radu
+ID: 10 | Titlu: Player video | Status: NOUA | Prioritate: 2 | Proiect: Platforma E-learning | Executant: Ana Stoica
+ID: 11 | Titlu: Catalog produse | Status: FINALIZATA | Prioritate: 1 | Proiect: Magazin Online | Executant: Dan Florea
+ID: 12 | Titlu: Cos cumparaturi | Status: FINALIZATA | Prioritate: 1 | Proiect: Magazin Online | Executant: Gabriela Marin
+ID: 13 | Titlu: Modul salarii | Status: IN_PROGRES | Prioritate: 2 | Proiect: Sistem HR | Executant: Razvan Dima
+ID: 14 | Titlu: Raport personal | Status: NOUA | Prioritate: 1 | Proiect: Sistem HR | Executant: Alina Tudor
+ID: 15 | Titlu: Configurare gateway | Status: IN_PROGRES | Prioritate: 3 | Proiect: API Gateway | Executant: Bogdan Niculescu
+ID: 16 | Titlu: Documentatie API | Status: NOUA | Prioritate: 2 | Proiect: API Gateway | Executant: Roxana Ghita
+ID: 17 | Titlu: Grafice vanzari | Status: IN_PROGRES | Prioritate: 1 | Proiect: Dashboard Analytics | Executant: Catalin Vlad
+ID: 18 | Titlu: Export rapoarte | Status: NOUA | Prioritate: 2 | Proiect: Dashboard Analytics | Executant: Simona Costea
+ID: 19 | Titlu: Template factura | Status: FINALIZATA | Prioritate: 1 | Proiect: Sistem Facturare | Executant: Florin Anghel
+ID: 20 | Titlu: Trimitere automata | Status: IN_PROGRES | Prioritate: 2 | Proiect: Sistem Facturare | Executant: Laura Barbu
+ID: 21 | Titlu: Instalare aplicatie | Status: FINALIZATA | Prioritate: 1 | Proiect: Aplicatie Desktop | Executant: Sorin Coman
+ID: 22 | Titlu: Configurare DB | Status: FINALIZATA | Prioritate: 1 | Proiect: Aplicatie Desktop | Executant: Oana Dinu
+ID: 23 | Titlu: Audit securitate | Status: FINALIZATA | Prioritate: 3 | Proiect: Securitate IT | Executant: Victor Enache
+ID: 24 | Titlu: Implementare firewall | Status: FINALIZATA | Prioritate: 3 | Proiect: Securitate IT | Executant: Andreea Feraru
+ID: 25 | Titlu: Migrare servere | Status: IN_PROGRES | Prioritate: 3 | Proiect: Migrare Cloud | Executant: Stefan Grigore
+ID: 26 | Titlu: Testare migrare | Status: NOUA | Prioritate: 2 | Proiect: Migrare Cloud | Executant: Carmen Ilie
+ID: 27 | Titlu: Sistem email alerts | Status: FINALIZATA | Prioritate: 1 | Proiect: Sistem Notificari | Executant: Marius Lungu
+ID: 28 | Titlu: Push notifications | Status: FINALIZATA | Prioritate: 2 | Proiect: Sistem Notificari | Executant: Diana Matei
+ID: 29 | Titlu: Model AI chatbot | Status: IN_PROGRES | Prioritate: 3 | Proiect: Chatbot Support | Executant: Lucian Neagu
+ID: 30 | Titlu: Integrare chat | Status: NOUA | Prioritate: 2 | Proiect: Chatbot Support | Executant: Teodora Olaru
+ID: 31 | Titlu: Modul receptie | Status: IN_PROGRES | Prioritate: 1 | Proiect: Sistem Inventar | Executant: Adrian Pavel
+ID: 32 | Titlu: Raport stocuri | Status: NOUA | Prioritate: 1 | Proiect: Sistem Inventar | Executant: Mirela Rotaru
+ID: 33 | Titlu: Generator PDF | Status: FINALIZATA | Prioritate: 2 | Proiect: Aplicatie Raportare | Executant: Ciprian Sandu
+ID: 34 | Titlu: Programare rapoarte | Status: FINALIZATA | Prioritate: 2 | Proiect: Aplicatie Raportare | Executant: Valentina Toma
+ID: 35 | Titlu: Conectare senzori | Status: IN_PROGRES | Prioritate: 3 | Proiect: Platform IoT | Executant: Robert Ungureanu
+ID: 36 | Titlu: Dashboard IoT | Status: NOUA | Prioritate: 2 | Proiect: Platform IoT | Executant: Nicoleta Vasile
+ID: 37 | Titlu: Calendar rezervari | Status: IN_PROGRES | Prioritate: 1 | Proiect: Sistem Rezervari | Executant: Octavian Zamfir
+ID: 38 | Titlu: Confirmare rezervare | Status: NOUA | Prioritate: 1 | Proiect: Sistem Rezervari | Executant: Raluca Apostol
+ID: 39 | Titlu: Modul cheltuieli | Status: IN_PROGRES | Prioritate: 2 | Proiect: Aplicatie Contab. | Executant: Ionut Badea
+ID: 40 | Titlu: Balanta conturi | Status: NOUA | Prioritate: 2 | Proiect: Aplicatie Contab. | Executant: Petra Chiriac
+ID: 41 | Titlu: Alerte server | Status: IN_PROGRES | Prioritate: 3 | Proiect: Sistem Monitorizare | Executant: Silviu Draghici
+ID: 42 | Titlu: Log centralizat | Status: NOUA | Prioritate: 2 | Proiect: Sistem Monitorizare | Executant: Monica Epure
+ID: 43 | Titlu: Pagina profil | Status: IN_PROGRES | Prioritate: 1 | Proiect: Portal Angajati | Executant: Radu Fulga
+ID: 44 | Titlu: Cereri concediu | Status: NOUA | Prioritate: 2 | Proiect: Portal Angajati | Executant: Bianca Herciu
+ID: 45 | Titlu: Creare ticket | Status: IN_PROGRES | Prioritate: 1 | Proiect: Sistem Ticketing | Executant: Cosmin Iordache
+ID: 46 | Titlu: Atribuire ticket | Status: NOUA | Prioritate: 2 | Proiect: Sistem Ticketing | Executant: Stefania Jinaru
+ID: 47 | Titlu: Modul transport | Status: IN_PROGRES | Prioritate: 2 | Proiect: Aplicatie Logistica | Executant: Gabriel Lazar
+ID: 48 | Titlu: Tracking GPS | Status: NOUA | Prioritate: 3 | Proiect: Aplicatie Logistica | Executant: Roxana Manea
+ID: 49 | Titlu: OAuth2 setup | Status: IN_PROGRES | Prioritate: 3 | Proiect: Sistem Autentificare | Executant: Dragos Nita
+ID: 50 | Titlu: Testare autentificare | Status: NOUA | Prioritate: 2 | Proiect: Sistem Autentificare | Executant: Adelina Oprea
