@@ -15,7 +15,7 @@ public class SarcinaFormDialog extends Dialog<Sarcina> {
         ButtonType saveBtn = new ButtonType("Salveaza", ButtonBar.ButtonData.OK_DONE);
         getDialogPane().getButtonTypes().addAll(saveBtn, ButtonType.CANCEL);
 
-        TextField txtTitlu    = new TextField();
+        TextField txtTitlu = new TextField();
         TextField txtDescriere = new TextField();
         TextField txtPrioritate = new TextField("1");
 
@@ -44,12 +44,12 @@ public class SarcinaFormDialog extends Dialog<Sarcina> {
         grid.setHgap(10);
         grid.setVgap(10);
         grid.setPadding(new Insets(20));
-        grid.addRow(0, new Label("Titlu:"),      txtTitlu);
-        grid.addRow(1, new Label("Descriere:"),  txtDescriere);
+        grid.addRow(0, new Label("Titlu:"), txtTitlu);
+        grid.addRow(1, new Label("Descriere:"), txtDescriere);
         grid.addRow(2, new Label("Prioritate:"), txtPrioritate);
-        grid.addRow(3, new Label("Status:"),     cmbStatus);
-        grid.addRow(4, new Label("Proiect:"),    cmbProiect);
-        grid.addRow(5, new Label("Executant:"),  cmbExecutant);
+        grid.addRow(3, new Label("Status:"), cmbStatus);
+        grid.addRow(4, new Label("Proiect:"), cmbProiect);
+        grid.addRow(5, new Label("Executant:"), cmbExecutant);
 
         getDialogPane().setContent(grid);
 
@@ -65,14 +65,23 @@ public class SarcinaFormDialog extends Dialog<Sarcina> {
                 }
                 int id = sarcina != null ? sarcina.getId() : 0;
                 int prio = 1;
-                try { prio = Integer.parseInt(txtPrioritate.getText()); }
-                catch (NumberFormatException ignored) {}
+                try {
+                    prio = Integer.parseInt(txtPrioritate.getText());
+                    if (prio <= 0) {
+                        new Alert(Alert.AlertType.ERROR, "Prioritatea trebuie sa fie un numar pozitiv (1, 2 sau 3)!")
+                                .showAndWait();
+                        return null;
+                    }
+                } catch (NumberFormatException e) {
+                    new Alert(Alert.AlertType.ERROR, "Prioritatea trebuie sa fie un numar intreg!").showAndWait();
+                    return null;
+                }
                 int idExec = cmbExecutant.getValue() != null ? cmbExecutant.getValue().getId() : 0;
                 return new Sarcina(id, txtTitlu.getText().trim(), txtDescriere.getText().trim(),
-                    prio, StatusSarcina.valueOf(cmbStatus.getValue()),
-                    cmbProiect.getValue().getId(), idExec,
-                    cmbProiect.getValue().getTitlu(),
-                    cmbExecutant.getValue() != null ? cmbExecutant.getValue().toString() : "");
+                        prio, StatusSarcina.valueOf(cmbStatus.getValue()),
+                        cmbProiect.getValue().getId(), idExec,
+                        cmbProiect.getValue().getTitlu(),
+                        cmbExecutant.getValue() != null ? cmbExecutant.getValue().toString() : "");
             }
             return null;
         });

@@ -14,7 +14,6 @@ import javafx.stage.Stage;
 import javafx.scene.image.Image;
 
 import java.io.File;
-import java.sql.SQLException;
 
 public class RaporteWindow {
 

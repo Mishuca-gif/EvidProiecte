@@ -10,7 +10,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.scene.image.Image;
 
@@ -22,6 +21,7 @@ public class ProiecteWindow {
     private TableView<Proiect> table = new TableView<>();
     private ObservableList<Proiect> data = FXCollections.observableArrayList();
 
+    @SuppressWarnings("unchecked")
     public void show() {
         Stage stage = new Stage();
         stage.setTitle("Proiecte");
@@ -204,7 +204,7 @@ public class ProiecteWindow {
         btn.setPrefHeight(38);
         btn.setPrefWidth(130);
         btn.setOnMouseEntered(e -> btn.setStyle(
-                "-fx-background-color: derive(" + color + ", -15%); -fx-text-fill: #1a1a1a; " +
+                "-fx-background-color: derive(" + color + ", -30%); -fx-text-fill: #1a1a1a; " +
                         "-fx-font-weight: bold; -fx-background-radius: 6; " +
                         "-fx-font-family: 'Georgia';"));
         btn.setOnMouseExited(e -> btn.setStyle(

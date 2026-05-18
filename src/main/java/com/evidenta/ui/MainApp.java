@@ -68,6 +68,8 @@ public class MainApp extends Application {
         appTitle.setStyle("-fx-font-size: 18px; -fx-font-weight: bold; " +
                 "-fx-text-fill: #fbbf24; -fx-font-family: 'Georgia'; " +
                 "-fx-text-alignment: center;");
+        appTitle.setMinWidth(150);
+        appTitle.setWrapText(true);
         appTitle.setAlignment(Pos.CENTER);
 
         initMenuButton(btnDashboard, "🏠  Dashboard");
@@ -100,8 +102,14 @@ public class MainApp extends Application {
             switchPanel(buildRaportePanel());
             setActive(btnRapoarte, btnDashboard, btnProiecte, btnSarcini, btnExecutanti, btnGrafice);
         });
+        btnGrafice.setOnAction(e -> {
+            switchPanel(buildGraficePanel());
+            setActive(btnGrafice, btnDashboard, btnProiecte, btnSarcini, btnExecutanti, btnRapoarte);
+        });
 
         Button btnExit = new Button("🚪  Iesire");
+        btnExit.setMinHeight(40);
+        btnExit.setPrefHeight(40);
         btnExit.setMaxWidth(Double.MAX_VALUE);
         btnExit.setPrefHeight(45);
         btnExit.setStyle("-fx-background-color: #e74c3c; -fx-text-fill: white; " +
@@ -129,16 +137,19 @@ public class MainApp extends Application {
         });
 
         Region spacer = new Region();
-        VBox.setVgrow(spacer, Priority.ALWAYS);
+        spacer.setMinHeight(10);
+        VBox.setVgrow(spacer, Priority.SOMETIMES);
 
         VBox sidebar = new VBox(15, appTitle, btnDashboard, btnProiecte, btnSarcini, btnExecutanti, btnRapoarte,
                 btnGrafice, spacer,
                 btnExit);
-        sidebar.setPadding(new Insets(25, 15, 25, 15));
-        sidebar.setAlignment(Pos.TOP_CENTER);
-        sidebar.setStyle("-fx-background-color: #111111;");
+        sidebar.setFillWidth(true);
+        sidebar.setSpacing(8);
         sidebar.setPrefWidth(180);
-
+        sidebar.setMinWidth(180);
+        sidebar.setMaxWidth(180);
+        sidebar.setStyle("-fx-background-color: #111111;");
+        sidebar.setPadding(new Insets(20, 10, 10, 10));
         statusBar.setStyle("-fx-background-color: #111111; -fx-text-fill: #aaaaaa; " +
                 "-fx-font-size: 12px; -fx-padding: 5 10 5 10;");
         statusBar.setMaxWidth(Double.MAX_VALUE);
@@ -198,6 +209,7 @@ public class MainApp extends Application {
                 buildCard("✅ Sarcini", String.valueOf(totalSarcini), "#f59e0b"),
                 buildCard("👥 Executanti", String.valueOf(totalExecutanti), "#ea580c"));
         row1.setAlignment(Pos.CENTER);
+        HBox.setHgrow(row1, Priority.ALWAYS);
 
         Label lblProiecteStatus = new Label("Status Proiecte");
         lblProiecteStatus.setStyle("-fx-text-fill: #aaaaaa; -fx-font-size: 14px; -fx-font-weight: bold;");
@@ -206,7 +218,7 @@ public class MainApp extends Application {
                 buildCard("🟢 Activ", String.valueOf(activ), "#2ecc71"),
                 buildCard("🔵 Finalizat", String.valueOf(finalizat), "#3498db"));
         row2.setAlignment(Pos.CENTER);
-
+        HBox.setHgrow(row2, Priority.ALWAYS);
         Label lblSarciniStatus = new Label("Status Sarcini");
         lblSarciniStatus.setStyle("-fx-text-fill: #aaaaaa; -fx-font-size: 14px; -fx-font-weight: bold;");
 
@@ -216,11 +228,15 @@ public class MainApp extends Application {
                 buildCard("🟢 Finalizata", String.valueOf(finalizata), "#2ecc71"),
                 buildCard("🔴 Anulata", String.valueOf(anulata), "#e74c3c"));
         row3.setAlignment(Pos.CENTER);
+        HBox.setHgrow(row3, Priority.ALWAYS);
 
         VBox panel = new VBox(25, title, row1, lblProiecteStatus, row2, lblSarciniStatus, row3);
         panel.setPadding(new Insets(30));
         panel.setAlignment(Pos.TOP_LEFT);
         panel.setStyle("-fx-background-color: #1a1a1a;");
+        VBox.setVgrow(row1, Priority.ALWAYS);
+        VBox.setVgrow(row2, Priority.ALWAYS);
+        VBox.setVgrow(row3, Priority.ALWAYS);
         return panel;
     }
 
@@ -233,10 +249,13 @@ public class MainApp extends Application {
         VBox card = new VBox(5, lblValue, lblLabel);
         card.setAlignment(Pos.CENTER);
         card.setPadding(new Insets(20));
+        card.setMinWidth(120);
         card.setPrefWidth(160);
+        card.setMaxWidth(Double.MAX_VALUE);
         card.setPrefHeight(100);
         card.setStyle("-fx-background-color: #2d2d2d; -fx-background-radius: 12; " +
                 "-fx-border-color: " + color + "; -fx-border-radius: 12; -fx-border-width: 1;");
+        HBox.setHgrow(card, Priority.ALWAYS);
         return card;
     }
 
@@ -715,7 +734,7 @@ public class MainApp extends Application {
         } catch (SQLException e) {
             showError(e.getMessage());
         }
-        VBox panel = new VBox(15, title,chartTitle, pieChart);
+        VBox panel = new VBox(15, title, chartTitle, pieChart);
         panel.setPadding(new Insets(20));
         panel.setStyle("-fx-background-color: #1a1a1a;");
         VBox.setVgrow(pieChart, Priority.ALWAYS);
@@ -881,6 +900,20 @@ public class MainApp extends Application {
                 "-fx-font-size: 13px; -fx-font-weight: bold; " +
                 "-fx-background-radius: 8; -fx-font-family: 'Georgia'; " +
                 "-fx-alignment: CENTER_LEFT; -fx-padding: 0 0 0 10;");
+        btn.setOnMouseEntered(e -> {
+            if (!btn.isDisabled())
+                btn.setStyle("-fx-background-color: #444444; -fx-text-fill: white; " +
+                        "-fx-font-size: 13px; -fx-font-weight: bold; " +
+                        "-fx-background-radius: 8; -fx-font-family: 'Georgia'; " +
+                        "-fx-alignment: CENTER_LEFT; -fx-padding: 0 0 0 10;");
+        });
+        btn.setOnMouseExited(e -> {
+            if (!btn.isDisabled())
+                btn.setStyle("-fx-background-color: #222222; -fx-text-fill: #aaaaaa; " +
+                        "-fx-font-size: 13px; -fx-font-weight: bold; " +
+                        "-fx-background-radius: 8; -fx-font-family: 'Georgia'; " +
+                        "-fx-alignment: CENTER_LEFT; -fx-padding: 0 0 0 10;");
+        });
     }
 
     @SuppressWarnings("unused")
@@ -915,7 +948,7 @@ public class MainApp extends Application {
                 "-fx-font-weight: bold; -fx-background-radius: 6; -fx-font-family: 'Georgia';");
         btn.setPrefHeight(38);
         btn.setOnMouseEntered(e -> btn.setStyle(
-                "-fx-background-color: derive(" + color + ", -15%); -fx-text-fill: #1a1a1a; " +
+                "-fx-background-color: derive(" + color + ", -30%); -fx-text-fill: #1a1a1a; " +
                         "-fx-font-weight: bold; -fx-background-radius: 6; -fx-font-family: 'Georgia';"));
         btn.setOnMouseExited(e -> btn.setStyle(
                 "-fx-background-color: " + color + "; -fx-text-fill: #1a1a1a; " +
